@@ -1,6 +1,5 @@
 #Briana DeAndrade
 #Nothing was left undone according to the directions
-    #I will email you to ask why the Project isn't running correctly
 
 #I had to import the openpyxl and numbers packages in order to open the Excel file as well as do certain math with within the code relating to the excel
 import openpyxl
