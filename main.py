@@ -47,6 +47,8 @@ def process_data(data_sheet, show_losses):
         pop_row = row[11]
         population_est = population_row.value
         pop_change = pop_row.value
+        if not isinstance(pop_change, numbers.Number):
+            continue
         population_change_percent = pop_change/population_est
         if show_losses and population_change_percent < -.02:
             print(f"In {state_cell}, {county_cell} had a {population_change_percent}% decrease between July 2020 - July 2021.")
