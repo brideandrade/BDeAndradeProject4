@@ -50,8 +50,8 @@ def process_data(data_sheet, show_losses):
             continue
         population_change_percent = pop_change/population_est
         if show_losses and population_change_percent < -.02:
-            print(f"In {state_cell}, {county_cell} had a {population_change_percent}% decrease between July 2020 - July 2021.")
+            print(f"In {state_cell.value}, {county_cell.value} had a {population_change_percent}% decrease between July 2020 - July 2021.")
         if show_losses and population_change_percent > .015:
-            print(f"In {state_cell}, {county_cell} had a {population_change_percent}% increase between July 2020 - July 2021.")
+            print(f"In {state_cell.value}, {county_cell.value} had a {population_change_percent}% increase between July 2020 - July 2021.")
 
 main()
